@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <script type="text/javascript" charset="utf-8" src="calc.js"></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <div id="calculator">
+        <h2>Calculadora</h2>
+        <div id="displayview">
+            <h1 id="conta">0</h1>
+        </div>
+        <div id="teclado">
+            <table>
+                <tr>
+                    <td colspan="2"><input id="clear" class="but" type="button" value="CE" onclick="ce()"></input></td>
+                    <td><input class="but" type="button" value="÷" onclick="insert('/')"></input></td>
+                    <td><input class="but" type="button" value="x" onclick="insert('*')"></input></td>
+                </tr>
+                <tr>
+                    <td><input class="but" type="button" value="7" onclick="insert(7)"></input></td>
+                    <td><input class="but" type="button" value="8" onclick="insert(8)"></input></td>
+                    <td><input class="but" type="button" value="9" onclick="insert(9)"></input></td>
+                    <td><input class="but" type="button" value="-" onclick="insert('-')"></input></td>
+                </tr>
+                <tr>
+                    <td><input class="but" type="button" value="4" onclick="insert(4)"></input></td>
+                    <td><input class="but" type="button" value="5" onclick="insert(5)"></input></td>
+                    <td><input class="but" type="button" value="6" onclick="insert(6)"></input></td>
+                    <td><input class="but" type="button" value="+" onclick="insert('+')"></input></td>
+                </tr>
+                <tr>
+                    <td><input class="but" type="button" value="1" onclick="insert(1)"></input></td>
+                    <td><input class="but" type="button" value="2" onclick="insert(2)"></input></td>
+                    <td><input class="but" type="button" value="3" onclick="insert(3)"></input></td>
+                    <td rowspan="2"><input id="igual" class="but" type="button" value="=" onclick="calcula()"></input></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input style="width: 158px;" class="but" type="button" value="0" onclick="insert(0)"></input></td>
+                    <td><input class="but" type="button" value="." onclick="insert('.')"></input></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
